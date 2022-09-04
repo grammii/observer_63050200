@@ -6,10 +6,7 @@
 package observer_63050200;
 
 import java.util.*;
-/**
- *
- * @author sornp
- */
+
 public class main {
 
     /**
