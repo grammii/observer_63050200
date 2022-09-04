@@ -12,6 +12,6 @@ package observer_63050200;
 public class UAE implements MyObserver {
     @Override
     public void update(Source o){
-        System.out.println("UAE  "+((Committee)o).getSomeData());
+        System.out.println("Thai  "+((Committee)o).getThaiScore()+"-"+((Committee)o).getUaeScore()+"  UAE");
     }
 }

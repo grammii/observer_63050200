@@ -23,15 +23,21 @@ public class main {
         
         obj.register(obj1);
         obj.register(obj2);
-        
-        int thaiScore = sc.nextInt();
-        int uaeScore = sc.nextInt();
-        
-        
-        
-        System.out.println(thaiScore+"  "+uaeScore);
-        
-        
-    }
-    
+
+        String readString = sc.nextLine();
+        while (true) {
+            try {
+                String[] a;
+                a = readString.split("\\s+");
+                obj.setSomeData(Integer.parseInt(a[0]),Integer.parseInt(a[1]));
+                
+                if (readString.equals(""))
+                    break;
+                if (sc.hasNextLine())
+                    readString = sc.nextLine();
+            } catch (Exception e) {
+                break;
+            }
+        }
+    }  
 }
